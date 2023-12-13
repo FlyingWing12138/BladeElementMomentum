@@ -1,10 +1,10 @@
-# Inflow Models for Blade Element Momentum Theory in Forward Flight 
+# Inflow Models for Blade Element Momentum Theory in Forward Flight #
 
 An assignment for the course FLIGHT DYNAMICS AND AEROELASTICITY OF ROTARY-WING AIRCRAFT of Politecnico di Milano
 
 **Qiuyang Xia**
 
-## Abstract
+## Abstract ##
 
 In this report, blade element momentum theory is briefly introduced.
 Momentum theory is utilized to first determine the inflow distribution
@@ -17,18 +17,16 @@ including uniform inflow model and various linear inflow model. Results
 showed the thrust coefficient distribution varies in terms of different
 inflow model, but correspond to a similar trend.
 
-## Method
+## Method ##
 
-### Uniform Inflow Model Derived from Momentum Analysis
+### Uniform Inflow Model Derived from Momentum Analysis ###
 
 During forward flight, the rotor disk is tilted forward by an angle
 $\alpha$. The geometric and force analysis is shown in Figure 1:
 
-![](media/image1.png){width="3.838888888888889in"
-height="2.8513888888888888in"}
+![FlowModel](FlowModel.png)
 
-Figure 1. Glauert\'s flow model for the momentum analysis of a rotor in
-forward flight.
+Figure 1. Glauert\'s flow model for the momentum analysis of a rotor in forward flight.
 
 where $V_{\infty}$ being infinite distance flow, $v_{i}$ being induced
 velocity perpendicular to the rotor disk, and $w$ being induced velocity
@@ -103,21 +101,15 @@ coefficients in the linear inflow model, which is summarized in Table 1.
 
 Table 1. Various Estimated Values of First Harmonic Inflow
 
-  ----------------------------- ---------------------------------------------------------------------------- ------------
-  Author(s)                     $$k_{x}$$                                                                    $$k_{y}$$
+Author(s) | k_{x} | k_{y} 
+------------|-------|---------
+Coleman et al. (1945) | \frac{\tan\chi}{2} | 0
+Drees (1949) | \frac{4}{3}\frac{1 - \cos\chi - 1.8\mu^{2}}{\sin\chi} | -2\mu
+Payne (1959) | \frac{4}{3}\frac{\mu}{\lambda\left( 1.2 + \frac{\mu}{\lambda} \right)} | 0
+White & Blake (1979) | \sqrt{2}\sin\chi | 0
+Pitt & Peters (1981) | \frac{15\pi}{23}\tan\frac{\chi}{2} | 0
+Howlett (1981) | \sin^{2}\chi | 0
 
-  Coleman et al. (1945)         $$\frac{\tan\chi}{2}$$                                                       $$0$$
-
-  Drees (1949)                  $$\frac{4}{3}\frac{1 - \cos\chi - 1.8\mu^{2}}{\sin\chi}$$                    $$- 2\mu$$
-
-  Payne (1959)                  $$\frac{4}{3}\frac{\mu}{\lambda\left( 1.2 + \frac{\mu}{\lambda} \right)}$$   $$0$$
-
-  White & Blake (1979)          $$\sqrt{2}\sin\chi$$                                                         $$0$$
-
-  Pitt & Peters (1981)          $$\frac{15\pi}{23}\tan\frac{\chi}{2}$$                                       $$0$$
-
-  Howlett (1981)                $$\sin^{2}\chi$$                                                             $$0$$
-  ----------------------------- ---------------------------------------------------------------------------- ------------
 
 ### Blade Element Analysis in Forward Flight
 

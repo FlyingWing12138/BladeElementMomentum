@@ -24,7 +24,7 @@ inflow model, but correspond to a similar trend.
 During forward flight, the rotor disk is tilted forward by an angle
 $\alpha$. The geometric and force analysis is shown in Figure 1:
 
-![FlowModel](FlowModel.png)
+![FlowModel](.\Figure\FlowModel.png)
 
 Figure 1. Glauert\'s flow model for the momentum analysis of a rotor in forward flight.
 

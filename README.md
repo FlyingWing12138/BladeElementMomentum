@@ -101,14 +101,14 @@ coefficients in the linear inflow model, which is summarized in Table 1.
 
 Table 1. Various Estimated Values of First Harmonic Inflow
 
-Author(s) | k_{x} | k_{y} 
+Author(s) | $$k_{x}$$ | $$k_{y}$$
 ------------|-------|---------
-Coleman et al. (1945) | \frac{\tan\chi}{2} | 0
-Drees (1949) | \frac{4}{3}\frac{1 - \cos\chi - 1.8\mu^{2}}{\sin\chi} | -2\mu
-Payne (1959) | \frac{4}{3}\frac{\mu}{\lambda\left( 1.2 + \frac{\mu}{\lambda} \right)} | 0
-White & Blake (1979) | \sqrt{2}\sin\chi | 0
-Pitt & Peters (1981) | \frac{15\pi}{23}\tan\frac{\chi}{2} | 0
-Howlett (1981) | \sin^{2}\chi | 0
+Coleman et al. (1945) | $$\frac{\tan\chi}{2}$$ | $$0$$
+Drees (1949) | $$\frac{4}{3}\frac{1 - \cos\chi - 1.8\mu^{2}}{\sin\chi}$$ | $$-2\mu$$
+Payne (1959) | $$\frac{4}{3}\frac{\mu}{\lambda\left( 1.2 + \frac{\mu}{\lambda} \right)}$$ | $$0$$
+White & Blake (1979) | $$\sqrt{2}\sin\chi$$ | $$0$$
+Pitt & Peters (1981) | $$\frac{15\pi}{23}\tan\frac{\chi}{2}$$ | $$0$$
+Howlett (1981) | $$\sin^{2}\chi$$ | $$0$$
 
 
 ### Blade Element Analysis in Forward Flight

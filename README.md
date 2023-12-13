@@ -18,13 +18,15 @@ showed the thrust coefficient distribution varies in terms of different
 inflow model, but correspond to a similar trend.
 
 ## Method
+<details>
+<summary>Uniform Inflow Model Derived from Momentum Analysis
 
 ### Uniform Inflow Model Derived from Momentum Analysis
 
 During forward flight, the rotor disk is tilted forward by an angle
 $\alpha$. The geometric and force analysis is shown in Figure 1:
 
-<img src="Figures/FlowModel.png" alt="FlowModel" width="400"/>\
+<img src="Figures/FlowModel.png" alt="FlowModel" width="400"/>
 
 **Figure 1. Glauert\'s flow model for the momentum analysis of a rotor in forward flight.**
 
@@ -34,53 +36,55 @@ at far wake.
 
 Glauert made the hypothesis of mass inflow:
 
-$$\dot{m} = \rho AU$$
+$\dot{m} = \rho AU$
 
 where $\rho$ is the air density, $A$ is the rotor area, and $U$ is the
 resultant velocity at the disk:
 
-$$U = \sqrt{\left( V_{\infty}\cos\alpha \right)^{2} + \left( V_{\infty}\sin\alpha + v_{i} \right)^{2}} = \sqrt{V_{\infty}^{2} + 2V_{\infty}v_{i}\sin\alpha + v_{i}^{2}}$$
+$U = \sqrt{\left( V_{\infty}\cos\alpha \right)^{2} + \left( V_{\infty}\sin\alpha + v_{i} \right)^{2}} = \sqrt{V_{\infty}^{2} + 2V_{\infty}v_{i}\sin\alpha + v_{i}^{2}}$
 
 With the conservation of momentum, we can get:
 
-$$\dot{m}\left( V_{\infty}\sin\alpha + w \right) - \dot{m}V_{\infty}\sin\alpha = \dot{m}w = T$$
+$\dot{m}\left( V_{\infty}\sin\alpha + w \right) - \dot{m}V_{\infty}\sin\alpha = \dot{m}w = T$
 
 From the energy conservation, we can get:
 
-$$\frac{1}{2}\dot{m}\left( V_{\infty}\sin\alpha + w \right)^{2} - \frac{1}{2}\dot{m}V_{\infty}^{2}\sin^{2}\alpha = \frac{1}{2}\dot{m}\left( 2V_{\infty}w\sin\alpha + w^{2} \right) = P = T\left( V_{\infty}\sin\alpha + v_{i} \right)$$
+$\frac{1}{2}\dot{m}\left( V_{\infty}\sin\alpha + w \right)^{2} - \frac{1}{2}\dot{m}V_{\infty}^{2}\sin^{2}\alpha = \frac{1}{2}\dot{m}\left( 2V_{\infty}w\sin\alpha + w^{2} \right) = P = T\left( V_{\infty}\sin\alpha + v_{i} \right)$
 
 From which we can get the relationship between $w$ and $v_{i}$:
 
-$$2V_{\infty}\sin\alpha + w = 2\left( V_{\infty}\sin\alpha + v_{i} \right)$$
+$2V_{\infty}\sin\alpha + w = 2\left( V_{\infty}\sin\alpha + v_{i} \right)$
 
-$$w = 2v_{i}$$
+$w = 2v_{i}$
 
 Thus, total thrust can be expressed as follows:
 
-$$T = 2\dot{m}v_{i} = 2\rho AUv_{i} = 2\rho Av_{i}\sqrt{V_{\infty}^{2} + 2V_{\infty}v_{i}\sin\alpha + v_{i}^{2}}$$
+$T = 2\dot{m}v_{i} = 2\rho AUv_{i} = 2\rho Av_{i}\sqrt{V_{\infty}^{2} + 2V_{\infty}v_{i}\sin\alpha + v_{i}^{2}}$
 
 Since hovering induced velocity can be expressed as:
 
-$$v_{h}^{2} = \frac{T}{2\rho A}$$
+$v_{h}^{2} = \frac{T}{2\rho A}$
 
 the induced velocity can be expressed as:
 
-$$v_{i} = \frac{v_{h}^{2}}{\sqrt{\left( V_{\infty}\cos\alpha \right)^{2} + \left( V_{\infty}\sin\alpha + v_{i} \right)^{2}}}$$
+$v_{i} = \frac{v_{h}^{2}}{\sqrt{\left( V_{\infty}\cos\alpha \right)^{2} + \left( V_{\infty}\sin\alpha + v_{i} \right)^{2}}}$
 
 Defining the advance ratio and the inflow ratio in forward flight as
 $\mu$ and $\lambda$ respectively, we have:
 
-$$\mu = \frac{V_{\infty}\cos\alpha}{\Omega R}$$
+$\mu = \frac{V_{\infty}\cos\alpha}{\Omega R}$
 
-$$\lambda = \frac{V_{\infty}\sin\alpha + v_{i}}{\Omega R} = \mu\tan\alpha + \lambda_{i}$$
+$\lambda = \frac{V_{\infty}\sin\alpha + v_{i}}{\Omega R} = \mu\tan\alpha + \lambda_{i}$
 
 From the equations above, the induced inflow ratio can be expressed as:
 
-$$\lambda_{i} = \frac{\lambda_{h}^{2}}{\sqrt{\mu^{2} + \lambda^{2}}} = \frac{C_{T}}{\sqrt{\mu^{2} + \lambda^{2}}}$$
+$\lambda_{i} = \frac{\lambda_{h}^{2}}{\sqrt{\mu^{2} + \lambda^{2}}} = \frac{C_{T}}{\sqrt{\mu^{2} + \lambda^{2}}}$
 
 Thus, we get an implicit expression of inflow ratio:
 
-$$\lambda = \mu\tan\alpha + \frac{C_{T}}{\sqrt{\mu^{2} + \lambda^{2}}}$$
+$\lambda = \mu\tan\alpha + \frac{C_{T}}{\sqrt{\mu^{2} + \lambda^{2}}}$
+
+</details>
 
 ### Linear Inflow Model
 
@@ -88,7 +92,7 @@ In-flight experimental observations at higher advancing speed
 ($\mu > 0.15$) have shown that the longitudinal and lateral inflow
 variation is approximately linear, which can be expressed as:
 
-$$\lambda_{i} = \lambda_{0}\left( 1 + k_{x}\frac{x}{R} + k_{y}\frac{y}{R} \right) = \lambda_{0}\left( 1 + k_{x}r\cos\psi + k_{y}r\sin\psi \right)$$
+$\lambda_{i} = \lambda_{0}\left( 1 + k_{x}\frac{x}{R} + k_{y}\frac{y}{R} \right) = \lambda_{0}\left( 1 + k_{x}r\cos\psi + k_{y}r\sin\psi \right)$
 
 In this equation, $\lambda_{0}$ is the mean induced velocity at the
 center of the rotor as given by the uniform momentum theory. $k_{x}$ and
@@ -123,74 +127,74 @@ neglected.
 Figure 2 shows a typical blade element for analysis. The $U_{R}$ is the
 radial component of velocity, which is neglected in this analysis.
 
-<img src="Figures/BladeElement.png" alt="BladeElement" width="400"/>\
+<img src="Figures/BladeElement.png" alt="BladeElement" width="400"/>
 
 **Figure 2. Incident velocities and aerodynamic environment at a typical blade element.**
 
 $U_{T}$ is the in-plane component of the resultant local flow velocity:
 
-$$U_{T} = \Omega y + \mu\Omega R\sin\psi$$
+$U_{T} = \Omega y + \mu\Omega R\sin\psi$
 
 and $U_{P}$ is the out-of-plane component.
 
-$$U_{P} = \lambda\Omega R + y\dot{\beta} + \mu\Omega R\beta\cos\psi$$
+$U_{P} = \lambda\Omega R + y\dot{\beta} + \mu\Omega R\beta\cos\psi$
 
 Therefore, the resultant velocity at the blade element is:
 
-$$U = \sqrt{U_{T}^{2} + U_{P}^{2}}\ $$
+$U = \sqrt{U_{T}^{2} + U_{P}^{2}}$
 
 The induced angle of attack, or the relative inflow angle $\phi$ at the
 blade element will be:
 
-$$\phi = \tan^{- 1}\frac{U_{P}}{U_{T}}$$
+$\phi = \tan^{- 1}\frac{U_{P}}{U_{T}}$
 
 If the pitch angle at the blade element is $\theta$, the the aerodynamic
 effective angle of attack $\alpha$ (different from shaft tilt angle) is:
 
-$$\alpha = \theta - \phi$$
+$\alpha = \theta - \phi$
 
 If the lift and drag coefficient is a function of effective angle of
 attack, they can be expressed as follows respectively:
 
-$$C_{l} = C_{l\alpha}\alpha$$
+$C_{l} = C_{l\alpha}\alpha$
 
-$$C_{d} = C_{d\alpha}\alpha$$
+$C_{d} = C_{d\alpha}\alpha$
 
 Thus, the resultant incremental lift $dL$ and drag $dD$ per unit span on
 the blade element are:
 
-$$dL = \frac{1}{2}\rho U^{2}cC_{l}dy$$
+$dL = \frac{1}{2}\rho U^{2}cC_{l}dy$
 
-$$dD = \frac{1}{2}\rho U^{2}cC_{d}dy$$
+$dD = \frac{1}{2}\rho U^{2}cC_{d}dy$
 
 where $c$ is the local blade chord.
 
 Referring to Figure 2, the forces perpendicular and parallel to the
 rotor disk can be resolved respectively as:
 
-$$dF_{z} = dL\cos\phi - dD\sin\phi$$
+$dF_{z} = dL\cos\phi - dD\sin\phi$
 
-$$dF_{x} = dL\sin\phi + dD\cos\phi$$
+$dF_{x} = dL\sin\phi + dD\cos\phi$
 
 Therefore, the blade element contributions to the thrust, torque, and
 power of the rotor are:
 
-$$dT = N_{b}dF_{z}$$
+$dT = N_{b}dF_{z}$
 
-$$dQ = N_{b}dF_{x}y$$
+$dQ = N_{b}dF_{x}y$
 
-$$dP = N_{b}dF_{x}\Omega y$$
+$dP = N_{b}dF_{x}\Omega y$
 
 where $N_{b}$ is the number of blades.
 
 For conveniently analyze, the non-dimensional quantities are introduced
 as follows:
 
-$$dC_{t} = F  \frac{dT}{\rho A(\Omega R)^{2}}$$
+$dC_{t} = F  \frac{dT}{\rho A(\Omega R)^{2}}$
 
-$$dC_{q} = F  \frac{dQ}{\rho A(\Omega R)^{2}R}$$
+$dC_{q} = F  \frac{dQ}{\rho A(\Omega R)^{2}R}$
 
-$$dC_{p} = F  \frac{dP}{\rho A(\Omega R)^{3}}$$
+$dC_{p} = F  \frac{dP}{\rho A(\Omega R)^{3}}$
 
 where $F$ is the Prandtl's tip-loss function, which will be introduced
 in the following section.
@@ -202,16 +206,16 @@ reduction which can be accounted for by either defining a simple ratio
 factor, or by computing tip-loss effects based on a method devised by
 Prandtl. The tip-loss factor derived by Prandtl can be expressed by $F$:
 
-$$F = \frac{2}{\pi}\cos^{- 1}e^{- f}$$
+$F = \frac{2}{\pi}\cos^{- 1}e^{- f}$
 
 where $f$ is given in terms of the number of blades and the radial
 position of the blade element:
 
-$$f = \frac{N_{b}}{2}  \frac{1 - r}{r\phi}$$
+$f = \frac{N_{b}}{2}  \frac{1 - r}{r\phi}$
 
 and the $\phi$ is the induced inflow angle.
 
-$$\phi = \frac{\lambda(r)}{r}$$
+$\phi = \frac{\lambda(r)}{r}$
 
 ### Characteristics and parameters derived from literature and used for calculating
 
@@ -246,7 +250,7 @@ written by Elliott et al.
 
 It's worth noticing that the NASA report nominated rotor control values:
 
-$$\theta = A_{0} - A_{1}\cos\psi - B_{1}\sin\psi$$
+$\theta = A_{0} - A_{1}\cos\psi - B_{1}\sin\psi$
 
 In the report, $A_{0} = 9.37,A_{1} = - 1.11,B_{1} = 3.23$. However,
 subsequent blade element analysis proved that these parameters caused
@@ -254,25 +258,25 @@ unbalanced rotor load in the lateral direction. Thus, in this report,
 another set of parameters were derived from the Master's thesis of
 Güner, 2016. where:
 
-$$\theta = \theta_{0} - \theta_{1c}\cos\psi - \theta_{1s}\sin\psi$$
+$\theta = \theta_{0} - \theta_{1c}\cos\psi - \theta_{1s}\sin\psi$
 
 and $\theta_{0} = 6.26,\theta_{1c} = - 2.08,\theta_{1s} = 1.96$.
 
 The linear twisted blade can be expressed as:
 
-$$\theta(r) = \theta_{75} + (r - 0.75)\theta_{tw}$$
+$\theta(r) = \theta_{75} + (r - 0.75)\theta_{tw}$
 
 The rotor flapping in forward flight is commonly expressed as a first
 order harmonics:
 
-$$\beta = \beta_{0} + \beta_{1c}\cos\psi + \beta_{1s}\sin\psi$$
+$\beta = \beta_{0} + \beta_{1c}\cos\psi + \beta_{1s}\sin\psi$
 
 However, in the NASA report, the flapping angle was set to constant with
 a coning angle $\beta_{0} = 1.5{^\circ}$, resulting:
 
-$$\beta = \beta_{0}$$
+$\beta = \beta_{0}$
 
-$$\dot{\beta} = 0$$
+$\dot{\beta} = 0$
 
 ## Results
 
@@ -286,7 +290,7 @@ models. Thus, the NASA data plotted in Figure 3 is multiplied by -1 to
 correspond to the inflow models.
 
 <img src="Figures/InflowComparisonLongitudinal.png" alt="InflowLongitudinal" width="300"/>\
-a)  Inflow in longitudinal 0° - 180° direction, positive 0°.
+a)  Inflow in longitudinal 0° - 180° direction, positive 0°.\
 <img src="Figures/InflowComparisonLateral.png" alt="InflowLateral" width="300"/>\
 b)  Inflow in lateral 90° - 270° direction, positive 90°, missing data for 270° direction in NASA measurement.
 
@@ -318,7 +322,7 @@ In this section, the distribution of inflow ratio, effective angle of
 attack (AoA), and thrust coefficient among the blade span and azimuth
 position is plotted. Also, define the "rotor balancing ratio" as:
 
-$$B = \frac{\int_{0}^{\pi}{\int_{}^{}{dC_{T}}}}{\int_{\pi}^{2\pi}{\int_{}^{}{dC_{T}}}}$$
+$B = \frac{\int_{0}^{\pi}{\int_{}^{}{dC_{T}}}}{\int_{\pi}^{2\pi}{\int_{}^{}{dC_{T}}}}$
 
 which evaluates the thrust balancing of advancing side and retreating
 side of the rotor.

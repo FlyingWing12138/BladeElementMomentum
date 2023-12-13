@@ -87,6 +87,9 @@ $\lambda = \mu\tan\alpha + \frac{C_{T}}{\sqrt{\mu^{2} + \lambda^{2}}}$
 
 </details>
 
+<details>
+<summary>Linear Inflow Model</summary>
+
 ### Linear Inflow Model
 
 In-flight experimental observations at higher advancing speed
@@ -115,6 +118,10 @@ coefficients in the linear inflow model, which is summarized in Table 1.
 | Pitt & Peters (1981)  | $\frac{15\pi}{23}\tan\frac{\chi}{2}$                                     | $0$     |
 | Howlett (1981)        | $\sin^{2}\chi$                                                           | $0$     |
 
+</details>
+
+<details>
+<summary>Blade Element Analysis in Forward Flight</summary>
 
 ### Blade Element Analysis in Forward Flight
 
@@ -199,6 +206,8 @@ $dC_{p} = F  \frac{dP}{\rho A(\Omega R)^{3}}$
 
 where $F$ is the Prandtl's tip-loss function, which will be introduced
 in the following section.
+
+</details>
 
 ### Prandtl's Tip-Loss Function
 

@@ -236,7 +236,7 @@ written by Elliott et al.
   | Parameters               | Symbol       | Value        |
   | :----------------------- | :----------- | :----------- |
   | Drag coefficient         | $C_{D}$      | 0.0002       |
-  | Shaft tilt angle         | $\alpha_{s}$ | -3           |
+  | Shaft tilt angle         | $\alpha_{s}$ | -3 deg       |
   | Coning                   | $\beta_{0}$  | 1.5          |
   | Infinite inflow ratio    | $\mu_{\inf}$ | 0.149        |
   | Thrust coefficient       | $C_{T}$      | 0.0063       |
@@ -317,7 +317,7 @@ In this section, the distribution of inflow ratio, effective angle of
 attack (AoA), and thrust coefficient among the blade span and azimuth
 position is plotted. Also, define the "rotor balancing ratio" as:
 
-$B = \frac{\int_{0}^{\pi}{\int_{}^{}{dC_{T}}}}{\int_{\pi}^{2\pi}{\int_{}^{}{dC_{T}}}}$
+$$B = \frac{\int_{0}^{\pi}{\int_{}^{}{dC_{T}}}}{\int_{\pi}^{2\pi}{\int_{}^{}{dC_{T}}}}$$
 
 which evaluates the thrust balancing of advancing side and retreating
 side of the rotor.

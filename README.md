@@ -432,7 +432,7 @@ c)  Thrust coefficient
 
 **Figure 11. Howlett linear inflow**
 
-<img src="Figures/HowlettLinearInflow.png" alt="HowlettInflow" width="200"/>
+<img src="Figures/HowlettLinearInflow.png" alt="HowlettInflow" width="400"/>
 
 The Howlett linear inflow model resulted in inflow ratio ranging from
 0.0010 to 0.0561. The effective AoA ranged from -16.89° to 5.93°. The

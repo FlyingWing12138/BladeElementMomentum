@@ -18,8 +18,9 @@ showed the thrust coefficient distribution varies in terms of different
 inflow model, but correspond to a similar trend.
 
 ## Method
+
 <details>
-<summary>Uniform Inflow Model Derived from Momentum Analysis
+<summary>Uniform Inflow Model Derived from Momentum Analysis</summary>
 
 ### Uniform Inflow Model Derived from Momentum Analysis
 

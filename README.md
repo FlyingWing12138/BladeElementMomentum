@@ -2,6 +2,9 @@
 
 An assignment for the course FLIGHT DYNAMICS AND AEROELASTICITY OF ROTARY-WING AIRCRAFT of Politecnico di Milano
 
+'polarPcolor' function thanks to the contribution of @ECheynet, 
+[polarPcolor github page.](https://github.com/ECheynet/polarPcolor)
+
 **Qiuyang Xia**
 
 ## Abstract

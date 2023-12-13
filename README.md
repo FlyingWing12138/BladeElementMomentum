@@ -1,10 +1,10 @@
-# Inflow Models for Blade Element Momentum Theory in Forward Flight #
+# Inflow Models for Blade Element Momentum Theory in Forward Flight
 
 An assignment for the course FLIGHT DYNAMICS AND AEROELASTICITY OF ROTARY-WING AIRCRAFT of Politecnico di Milano
 
 **Qiuyang Xia**
 
-## Abstract ##
+## Abstract
 
 In this report, blade element momentum theory is briefly introduced.
 Momentum theory is utilized to first determine the inflow distribution
@@ -17,9 +17,9 @@ including uniform inflow model and various linear inflow model. Results
 showed the thrust coefficient distribution varies in terms of different
 inflow model, but correspond to a similar trend.
 
-## Method ##
+## Method
 
-### Uniform Inflow Model Derived from Momentum Analysis ###
+### Uniform Inflow Model Derived from Momentum Analysis
 
 During forward flight, the rotor disk is tilted forward by an angle
 $\alpha$. The geometric and force analysis is shown in Figure 1:
@@ -187,11 +187,11 @@ where $N_{b}$ is the number of blades.
 For conveniently analyze, the non-dimensional quantities are introduced
 as follows:
 
-$$dC_{t} = F \bullet \frac{dT}{\rho A(\Omega R)^{2}}$$
+$$dC_{t} = F  \frac{dT}{\rho A(\Omega R)^{2}}$$
 
-$$dC_{q} = F \bullet \frac{dQ}{\rho A(\Omega R)^{2}R}$$
+$$dC_{q} = F  \frac{dQ}{\rho A(\Omega R)^{2}R}$$
 
-$$dC_{p} = F \bullet \frac{dP}{\rho A(\Omega R)^{3}}$$
+$$dC_{p} = F  \frac{dP}{\rho A(\Omega R)^{3}}$$
 
 where $F$ is the Prandtl's tip-loss function, which will be introduced
 in the following section.
@@ -208,7 +208,7 @@ $$F = \frac{2}{\pi}\cos^{- 1}e^{- f}$$
 where $f$ is given in terms of the number of blades and the radial
 position of the blade element:
 
-$$f = \frac{N_{b}}{2} \bullet \frac{1 - r}{r\phi}$$
+$$f = \frac{N_{b}}{2}  \frac{1 - r}{r\phi}$$
 
 and the $\phi$ is the induced inflow angle.
 
@@ -225,10 +225,10 @@ written by Elliott et al.
   | Characteristics     | Symbol        | Value                          |
   | ------------------- | ------------- | ------------------------------ |
   | Number of blades    | $N_{b}$       | 4                              |
-  | Airfoil             | \             | NACA0012, $C_{l\alpha} = 5.73$ |
-  | Hinge offset        | \             | 0.0508 m                       |
-  | Root cutout         | \             | 0.2096 m                       |
-  | Pitch-flap coupling | \             | 0                              |
+  | Airfoil             |               | NACA0012, $C_{l\alpha} = 5.73$ |
+  | Hinge offset        |               | 0.0508 m                       |
+  | Root cutout         |               | 0.2096 m                       |
+  | Pitch-flap coupling |               | 0                              |
   | Linear twist        | $\theta_{tw}$ | -8 deg                         |
   | Radius              | $R$           | 0.8606 m                       |
   | Root chord          | $c$           | 0.0660 m                       |
@@ -286,24 +286,12 @@ the rotor disk plane upwards, which is the opposite to the inflow
 models. Thus, the NASA data plotted in Figure 3 is multiplied by -1 to
 correspond to the inflow models.
 
-![InflowComparisonLongitudinal](media/image3.png){width="2.8743055555555554in"
-height="2.154861111111111in"}![InflowComparisonLateral](media/image4.png){width="2.8743055555555554in"
-height="2.154861111111111in"}
+![InflowLongitudinal](Figures/InflowComparisonLongitudinal.png)![InflowLateral](Figures/InflowComparisonLateral.png)
 
-+-----------------------------------+-----------------------------------+
-| a)  Inflow in longitudinal 0° -   | b)  Inflow in lateral 90° - 270°  |
-|     180° direction, positive 0°.  |     direction, positive 90°,      |
-|                                   |     missing data for 270°         |
-|                                   |     direction in NASA             |
-|                                   |     measurement.                  |
-+-----------------------------------+-----------------------------------+
-| Figure 3. Measured and modeled    |                                   |
-| inflow ratio at                   |                                   |
-| $\mathbf{\mu}\mathbf{= 0.149      |                                   |
-| ,\ }\mathbf{C}_{\mathbf{t}}\mathb |                                   |
-| f{= 0.0064,\ }\mathbf{\alpha}_{\m |                                   |
-| athbf{s}}\mathbf{= - 3{^\circ}}$. |                                   |
-+-----------------------------------+-----------------------------------+
+| | |
+|---|---|
+| a)  Inflow in longitudinal 0° - 180° direction, positive 0°.  | b)  Inflow in lateral 90° - 270° direction, positive 90°, missing data for 270° direction in NASA measurement. |
+| **Figure 3. Measured and modeled inflow ratio at $\mu = 0.149, C_{T} = 0.0064,\alpha_{s}= - 3^{\circ}$.**  |
 
 From Figure 3 we can observe that the Coleman linear inflow model had
 the most gentle slope in the longitudinal direction, while the Pitt &
@@ -315,7 +303,7 @@ Regarding to the lateral direction, since the above mentioned model all
 assumed that $k_{x} = 0$ except for Drees, their curve in the lateral
 plot coincident with the x-axis.
 
-### Theta Configuration.
+### Theta Configuration
 
 Due to the pitch control configurations, the theta value across the
 blade span and azimuth angle differs in each position. Figure 4 showed
@@ -495,7 +483,7 @@ coefficient had different kinds of distribution, but also had similar
 trend. The adjusted pitch control configuration showed better
 correlation with the experiment data.
 
-## References {#references .unnumbered}
+## References
 
 1.  Elliott J W, Althoff S L, Sailey R H. Inflow measurements made with
     a laser velocimeter on a helicopter model in forward flight. Volume

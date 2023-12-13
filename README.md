@@ -24,7 +24,7 @@ inflow model, but correspond to a similar trend.
 During forward flight, the rotor disk is tilted forward by an angle
 $\alpha$. The geometric and force analysis is shown in Figure 1:
 
-![FlowModel](Figures/FlowModel.png)
+<img src="Figures/FlowModel.png" alt="FlowModel" width="400"/>\
 
 **Figure 1. Glauert\'s flow model for the momentum analysis of a rotor in forward flight.**
 
@@ -123,10 +123,9 @@ neglected.
 Figure 2 shows a typical blade element for analysis. The $U_{R}$ is the
 radial component of velocity, which is neglected in this analysis.
 
-![BladeElement](Figures/BladeElement.png)
+<img src="Figures/BladeElement.png" alt="BladeElement" width="400"/>\
 
-**Figure 2. Incident velocities and aerodynamic environment at a typical
-blade element.**
+**Figure 2. Incident velocities and aerodynamic environment at a typical blade element.**
 
 $U_{T}$ is the in-plane component of the resultant local flow velocity:
 
@@ -286,9 +285,9 @@ the rotor disk plane upwards, which is the opposite to the inflow
 models. Thus, the NASA data plotted in Figure 3 is multiplied by -1 to
 correspond to the inflow models.
 
-![InflowLongitudinal](Figures/InflowComparisonLongitudinal.png)
+<img src="Figures/InflowComparisonLongitudinal.png" alt="InflowLongitudinal" width="300"/>\
 a)  Inflow in longitudinal 0° - 180° direction, positive 0°.
-![InflowLateral](Figures/InflowComparisonLateral.png)
+<img src="Figures/InflowComparisonLateral.png" alt="InflowLateral" width="300"/>\
 b)  Inflow in lateral 90° - 270° direction, positive 90°, missing data for 270° direction in NASA measurement.
 
 **Figure 3. Measured and modeled inflow ratio at $\mu = 0.149, C_{T} = 0.0064,\alpha_{s}= - 3^{\circ}$.**
@@ -309,7 +308,8 @@ Due to the pitch control configurations, the theta value across the
 blade span and azimuth angle differs in each position. Figure 4 showed
 the corresponding theta value in each position in degrees.
 
-![ThetaConfiguration](Figures/ThetaConfiguration.png)
+<img src="Figures/ThetaConfiguration.png" alt="ThetaConfiguration" width="300"/>
+
 **Figure 4. Theta Configuration (deg)**
 
 ### Blade Element Analysis of Thrust Coefficient
@@ -331,11 +331,11 @@ The largest value of thrust coefficient always appeared near the blade
 tip position, although the azimuth position may differ.
 
 
-![UniformInflow](Figures/UniformInflow.png)
-a)  Inflow 
-![UniformInflowAlpha](Figures/UniformInflowAlpha.png)
-b)  Effective AoA (deg)
-![UniformInflowThrust](Figures/UniformInflowThrust.png)
+<img src="Figures/UniformInflow.png" alt="UniformInflow" width="300"/>\
+a)  Inflow\
+<img src="Figures/UniformInflowAlpha.png" alt="UniformAlpha" width="300"/>\
+b)  Effective AoA (deg)\
+<img src="Figures/UniformInflowThrust.png" alt="UniformThrust" width="300"/>\
 c)  Thrust coefficient
 
 **Figure 5. Uniform inflow**
@@ -345,11 +345,11 @@ The angle of attack ranged from -16.64° to 6.80°. The maximum Thrust
 coefficient was $2.071×10^{-4}$ at the forward position of the rotor. The
 rotor balancing ratio was 0.9969.
 
-![ColemanInflow](Figures/ColemanLinearInflow.png)
-a)  Inflow 
-![ColemanInflowAlpha](Figures/ColemanInflowAlpha.png)
-b)  Effective AoA (deg)
-![ColemanInflowThrust](Figures/ColemanInflowThrust.png)
+<img src="Figures/ColemanLinearInflow.png" alt="ColemanInflow" width="300"/>\
+a)  Inflow\
+<img src="Figures/ColemanInflowAlpha.png" alt="ColemanAlpha" width="300"/>\
+b)  Effective AoA (deg)\
+<img src="Figures/ColemanInflowThrust.png" alt="ColemanThrust" width="300"/>\
 c)  Thrust coefficient
 
 **Figure 6. Coleman linear inflow**
@@ -360,11 +360,11 @@ ratio, ranging from 0.0050 to 0.0522. The maximum effective AoA was
 value around 0° of azimuth position with a value of $1.466×10^{-4}$. The
 rotor balancing ratio was 0.9900.
 
-![DreesInflow](Figures/DreesLinearInflow.png)
-a)  Inflow 
-![DreesInflowAlpha](Figures/DreesInflowAlpha.png)
-b)  Effective AoA (deg)
-![DreesInflowThrust](Figures/DreesInflowThrust.png)
+<img src="Figures/DreesLinearInflow.png" alt="DreesInflow" width="300"/>\
+a)  Inflow\
+<img src="Figures/DreesInflowAlpha.png" alt="DreesAlpha" width="300"/>\
+b)  Effective AoA (deg)\
+<img src="Figures/DreesInflowThrust.png" alt="DreesThrust" width="300"/>\
 c)  Thrust coefficient
 
 **Figure 7. Drees linear inflow**
@@ -377,11 +377,11 @@ The rotor balancing ratio is 1.1860. A better theta configuration could
 result in a better rotor balancing ratio, but that is not what this
 report is about.
 
-![PayneInflow](Figures/PayneLinearInflow.png)
-a)  Inflow 
-![PayneInflowAlpha](Figures/PayneInflowAlpha.png)
-b)  Effective AoA (deg)
-![PayneInflowThrust](Figures/PayneInflowThrust.png)
+<img src="Figures/PayneLinearInflow.png" alt="PayneInflow" width="300"/>\
+a)  Inflow\
+<img src="Figures/PayneInflowAlpha.png" alt="PayneAlpha" width="300"/>\
+b)  Effective AoA (deg)\
+<img src="Figures/PayneInflowThrust.png" alt="PayneThrust" width="300"/>\
 c)  Thrust coefficient
 
 **Figure 8. Payne linear inflow**
@@ -392,11 +392,11 @@ ratio ranging from -0.0024 to 0.0595. The effective AoA ranged from
 was detected near the azimuth position of 240°. The rotor balancing
 ratio was 0.9884.
 
-![WhiteBlakeInflow](Figures/WhiteBlakeLinearInflow.png)
-a)  Inflow 
-![WhiteBlakeInflowAlpha](Figures/WhiteBlakeInflowAlpha.png)
-b)  Effective AoA (deg)
-![WhiteBlakeInflowThrust](Figures/WhiteBlakeInflowThrust.png)
+<img src="Figures/WhiteBlakeLinearInflow.png" alt="WhiteBlakeInflow" width="300"/>\
+a)  Inflow\
+<img src="Figures/WhiteBlakeInflowAlpha.png" alt="WhiteBlakeAlpha" width="300"/>\
+b)  Effective AoA (deg)\
+<img src="Figures/WhiteBlakeInflowThrust.png" alt="WhiteBlakeThrust" width="300"/>\
 c)  Thrust coefficient
 
 **Figure 9. White & Blake linear inflow**
@@ -407,11 +407,11 @@ The White & Blake linear inflow model gave the inflow ratio ranging from
 at the blade tip of approximate 240° of azimuth position. The rotor
 balancing ratio was 0.9869.
 
-![PittPetersInflow](Figures/PittPetersLinearInflow.png)
-a)  Inflow 
-![PittPetersInflowAlpha](Figures/PittPetersInflowAlpha.png)
-b)  Effective AoA (deg)
-![PittPetersInflowThrust](Figures/PittPetersInflowThrust.png)
+<img src="Figures/PittPetersLinearInflow.png" alt="PittPetersInflow" width="300"/>\
+a)  Inflow\
+<img src="Figures/PittPetersInflowAlpha.png" alt="PittPetersAlpha" width="300"/>\
+b)  Effective AoA (deg)\
+<img src="Figures/PittPetersInflowThrust.png" alt="PittPetersThrust" width="300"/>\
 c)  Thrust coefficient
 
 **Figure 10. Pitt & Peters linear inflow**
@@ -423,16 +423,14 @@ was the largest range. The maximum value of thrust coefficient was
 around $1.820×10^{-4}$, at the rotor tip of around 210° azimuth position.
 The rotor balancing ratio was 0.9860.
 
-![HowlettInflow](Figures/HowlettLinearInflow.png)
-a)  Inflow 
-![HowlettInflowAlpha](Figures/HowlettInflowAlpha.png)
-b)  Effective AoA (deg)
-![HowlettInflowThrust](Figures/HowlettInflowThrust.png)
+<img src="Figures/HowlettLinearInflow.png" alt="HowlettInflow" width="300"/>\
+a)  Inflow\
+<img src="Figures/HowlettInflowAlpha.png" alt="HowlettAlpha" width="300"/>\
+b)  Effective AoA (deg)\
+<img src="Figures/HowlettInflowThrust.png" alt="HowlettThrust" width="300"/>\
 c)  Thrust coefficient
 
 **Figure 11. Howlett linear inflow**
-
-<img src="Figures/HowlettLinearInflow.png" alt="HowlettInflow" width="400"/>
 
 The Howlett linear inflow model resulted in inflow ratio ranging from
 0.0010 to 0.0561. The effective AoA ranged from -16.89° to 5.93°. The

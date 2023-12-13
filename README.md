@@ -286,12 +286,12 @@ the rotor disk plane upwards, which is the opposite to the inflow
 models. Thus, the NASA data plotted in Figure 3 is multiplied by -1 to
 correspond to the inflow models.
 
-![InflowLongitudinal](Figures/InflowComparisonLongitudinal.png)![InflowLateral](Figures/InflowComparisonLateral.png)
+![InflowLongitudinal](Figures/InflowComparisonLongitudinal.png)
+a)  Inflow in longitudinal 0° - 180° direction, positive 0°.
+![InflowLateral](Figures/InflowComparisonLateral.png)
+b)  Inflow in lateral 90° - 270° direction, positive 90°, missing data for 270° direction in NASA measurement.
 
-| | |
-|---|---|
-| a)  Inflow in longitudinal 0° - 180° direction, positive 0°.  | b)  Inflow in lateral 90° - 270° direction, positive 90°, missing data for 270° direction in NASA measurement. |
-| **Figure 3. Measured and modeled inflow ratio at $\mu = 0.149, C_{T} = 0.0064,\alpha_{s}= - 3^{\circ}$.**  |
+**Figure 3. Measured and modeled inflow ratio at $\mu = 0.149, C_{T} = 0.0064,\alpha_{s}= - 3^{\circ}$.**
 
 From Figure 3 we can observe that the Coleman linear inflow model had
 the most gentle slope in the longitudinal direction, while the Pitt &

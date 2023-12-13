@@ -432,10 +432,12 @@ c)  Thrust coefficient
 
 **Figure 11. Howlett linear inflow**
 
+<img src="Figures/HowlettLinearInflow.png" alt="HowlettInflow" width="200"/>
+
 The Howlett linear inflow model resulted in inflow ratio ranging from
 0.0010 to 0.0561. The effective AoA ranged from -16.89° to 5.93°. The
 thrust coefficient showed its larger value at the blade tip of
-retreating side, with a maximum value of 1.454×10^-4^. The rotor
+retreating side, with a maximum value of $1.454×10^{-4}$. The rotor
 balancing ratio was 0.9891.
 
 ## Summary

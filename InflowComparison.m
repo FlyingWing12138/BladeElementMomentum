@@ -2,14 +2,14 @@ clear
 clc
 close all
 
-data.NASA = load('lambdaMeasuredNASA.mat');
-data.Coleman = load('ColemanDynamics.mat');
-data.Drees = load('DreesDynamics.mat');
-data.Payne = load('PayneDynamics.mat');
-data.WhiteBlake = load('WhiteBlakeDynamics.mat');
-data.PittPeters = load('PittPetersDynamics.mat');
-data.Howlett = load('HowlettDynamics.mat');
-data.Uniform = load('UniformDynamics.mat');
+data.NASA = load('Data\lambdaMeasuredNASA.mat');
+data.Coleman = load('Data\ColemanDynamics.mat');
+data.Drees = load('Data\DreesDynamics.mat');
+data.Payne = load('Data\PayneDynamics.mat');
+data.WhiteBlake = load('Data\WhiteBlakeDynamics.mat');
+data.PittPeters = load('Data\PittPetersDynamics.mat');
+data.Howlett = load('Data\HowlettDynamics.mat');
+data.Uniform = load('Data\UniformDynamics.mat');
 
 modelCell = {'NASA','Coleman','Drees','Payne','WhiteBlake','PittPeters','Howlett','Uniform'};
 lineStyles = {'.','-','-','-','-','-','-','-'};
@@ -23,7 +23,7 @@ box on
 grid on
 set(gca, 'YDir', 'reverse')
 
-angle1 = 0;
+angle1 = pi/2;
 angle2 = pi+angle1;
 
 % plot(data.NASA.r, data.NASA.lambdaMeasured(:,4),'.r','MarkerSize',8)
@@ -59,6 +59,13 @@ yticks(-0.02:0.02:0.08)
 % legend([{'NASA Measurement'},modelCell],'Location','southwest')
 legend(modelCell,'Location','best')
 
+if angle1 == 0
+    figureName = 'InflowComparisonLongitudinal';
+elseif angle1 == pi/2
+    figureName = 'InflowComparisonLateral';
+else
+    figureName = ['InflowComparison',num2str(angle1)];
+end
 
-saveas(h, 'InflowComparisonLateral','fig')
-saveas(h, 'InflowComparisonLateral','png')
+saveas(h, ['Figures\',figureName],'fig')
+saveas(h, ['Figures\',figureName],'png')

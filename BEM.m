@@ -29,12 +29,12 @@ r = (0.2:0.01:1)';
 % theta0 = 9.37;          % Collective pitch at r/R=0.75 [deg]
 % theta1c = -1.11;        % Lateral pitch (cosine term) [deg]
 % theat1s = 3.23;         % Longitudinal pitch (sine term) [deg]
-% theta0 = 6.26;          % Collective pitch at r/R=0.75 [deg]
-% theta1c = -2.08;        % Lateral pitch (cosine term) [deg]
-% theat1s = 1.96;         % Longitudinal pitch (sine term) [deg]
-theta0 = 5.49;              % Collective pitch at r/R=0.75 [deg]
-theta1c = -2.23;            % Lateral pitch (cosine term) [deg]
-theat1s = 2.09;             % Longitudinal pitch (sine term) [deg]
+theta0 = 6.26;          % Collective pitch at r/R=0.75 [deg]
+theta1c = -2.08;        % Lateral pitch (cosine term) [deg]
+theat1s = 1.96;         % Longitudinal pitch (sine term) [deg]
+% theta0 = 5.49;              % Collective pitch at r/R=0.75 [deg]
+% theta1c = -2.23;            % Lateral pitch (cosine term) [deg]
+% theat1s = 2.09;             % Longitudinal pitch (sine term) [deg]
 % theta0 = 6.873;          % Collective pitch at r/R=0.75 [deg]
 % theta1c = -2.014;        % Lateral pitch (cosine term) [deg]
 % theat1s = 1.073;  
@@ -67,8 +67,8 @@ for i = 1:size(modelCell,2)
     a.Children(1).Ticks=-0.01:0.01:0.07;
 
     inflowTitle=[model,'LinearInflow'];
-%     saveas(a, inflowTitle, 'fig')
-%     saveas(a, inflowTitle, 'png')
+    saveas(a, ['Figures\',inflowTitle], 'fig')
+    saveas(a, ['Figures\',inflowTitle], 'png')
 
     b=figure('Visible',figureVisibility);
     polarPcolor(r',psi*180/pi,Dynamics.dCt,'Ncircles',5,'Nspokes',13,'typeRose','default')
@@ -78,8 +78,8 @@ for i = 1:size(modelCell,2)
     b.Children(1).Ticks=0:2e-5:2e-4;
 
     thrustTitle = [model,'InflowThrust'];
-%     saveas(b, thrustTitle, 'fig')
-%     saveas(b, thrustTitle, 'png')
+    saveas(b, ['Figures\',thrustTitle], 'fig')
+    saveas(b, ['Figures\',thrustTitle], 'png')
 
     cc=figure('Visible',figureVisibility);
     polarPcolor(r',psi*180/pi,Dynamics.alpha/2/pi*360,'Ncircles',5,'Nspokes',13,'typeRose','default')
@@ -89,11 +89,11 @@ for i = 1:size(modelCell,2)
     cc.Children(1).Ticks=-4:1:7;
 
     alphaTitle = [model,'InflowAlpha'];
-%     saveas(cc, alphaTitle, 'fig')
-%     saveas(cc, alphaTitle, 'png')
+    saveas(cc, ['Figures\',alphaTitle], 'fig')
+    saveas(cc, ['Figures\',alphaTitle], 'png')
 
     fileName = [model,'Dynamics'];
-%     save(fileName, "Dynamics", "lambda", "r", "psi");
+    save(['Data\',fileName], 'Dynamics', 'lambda', 'r', 'psi');
 
     fprintf('%s Model Complete. \n', model)
 
@@ -110,8 +110,8 @@ if 1 == 1
     clim([1.5 13.5])
     d.Children(1).Ticks=2:1:13;
 
-%     saveas(d,'ThetaConfiguration','fig')
-%     saveas(d,'ThetaConfiguration','png')
+    saveas(d,'Figures\ThetaConfiguration','fig')
+    saveas(d,'Figures\ThetaConfiguration','png')
 
     fprintf('Theta Configuration Complete. \n')
 
@@ -133,8 +133,8 @@ if 1 == 1
     clim([-0.015 0.075])
     e.Children(1).Ticks=-0.01:0.01:0.07;
 
-%     saveas(e, 'UniformInflow','fig')
-%     saveas(e, 'UniformInflow','png')
+    saveas(e, 'Figures\UniformInflow','fig')
+    saveas(e, 'Figures\UniformInflow','png')
 
     f=figure('Visible',figureVisibility);
     polarPcolor(r',psi*180/pi,Dynamics.dCt,'Ncircles',5,'Nspokes',9,'typeRose','default')
@@ -143,8 +143,8 @@ if 1 == 1
     clim([-1e-5 21e-5])
     f.Children(1).Ticks=0:2e-5:2e-4;
 
-%     saveas(f,'UniformInflowThrust','fig')
-%     saveas(f,'UniformInflowThrust','png')
+    saveas(f,'Figures\UniformInflowThrust','fig')
+    saveas(f,'Figures\UniformInflowThrust','png')
 
     g=figure('Visible',figureVisibility);
     polarPcolor(r',psi*180/pi,Dynamics.alpha/2/pi*360,'Ncircles',5,'Nspokes',9,'typeRose','default')
@@ -153,10 +153,10 @@ if 1 == 1
     clim([-4 7.5])
     g.Children(1).Ticks=-4:1:7;
 
-%     saveas(g,'UniformInflowAlpha','fig')
-%     saveas(g,'UniformInflowAlpha','png')
+    saveas(g,'Figures\UniformInflowAlpha','fig')
+    saveas(g,'Figures\UniformInflowAlpha','png')
 
-%     save("UniformDynamics", "Dynamics", "lambda", "r", "psi");
+    save('Data\UniformDynamics', 'Dynamics', 'lambda', 'r', 'psi');
 
     fprintf('Uniform Model Complete. \n')
 

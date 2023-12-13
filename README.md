@@ -26,7 +26,7 @@ $\alpha$. The geometric and force analysis is shown in Figure 1:
 
 ![FlowModel](Figures/FlowModel.png)
 
-Figure 1. Glauert\'s flow model for the momentum analysis of a rotor in forward flight.
+**Figure 1. Glauert\'s flow model for the momentum analysis of a rotor in forward flight.**
 
 where $V_{\infty}$ being infinite distance flow, $v_{i}$ being induced
 velocity perpendicular to the rotor disk, and $w$ being induced velocity
@@ -99,16 +99,16 @@ theory. $\psi$ is the blade azimuth position angle.
 Various researchers suggested different value couples for the
 coefficients in the linear inflow model, which is summarized in Table 1.
 
-Table 1. Various Estimated Values of First Harmonic Inflow
+**Table 1. Various Estimated Values of First Harmonic Inflow**
 
-Author(s) | $$k_{x}$$ | $$k_{y}$$
-------------|-------|---------
-Coleman et al. (1945) | $$\frac{\tan\chi}{2}$$ | $$0$$
-Drees (1949) | $$\frac{4}{3}\frac{1 - \cos\chi - 1.8\mu^{2}}{\sin\chi}$$ | $$-2\mu$$
-Payne (1959) | $$\frac{4}{3}\frac{\mu}{\lambda\left( 1.2 + \frac{\mu}{\lambda} \right)}$$ | $$0$$
-White & Blake (1979) | $$\sqrt{2}\sin\chi$$ | $$0$$
-Pitt & Peters (1981) | $$\frac{15\pi}{23}\tan\frac{\chi}{2}$$ | $$0$$
-Howlett (1981) | $$\sin^{2}\chi$$ | $$0$$
+| Author(s)             | $k_{x}$                                                                  | $k_{y}$ |
+| --------------------- | ------------------------------------------------------------------------ | ------- |
+| Coleman et al. (1945) | $\frac{\tan\chi}{2}$                                                     | $0$     |
+| Drees (1949)          | $\frac{4}{3}\frac{1 - \cos\chi - 1.8\mu^{2}}{\sin\chi}$                  | $-2\mu$ |
+| Payne (1959)          | $\frac{4}{3}\frac{\mu}{\lambda\left( 1.2 + \frac{\mu}{\lambda} \right)}$ | $0$     |
+| White & Blake (1979)  | $\sqrt{2}\sin\chi$                                                       | $0$     |
+| Pitt & Peters (1981)  | $\frac{15\pi}{23}\tan\frac{\chi}{2}$                                     | $0$     |
+| Howlett (1981)        | $\sin^{2}\chi$                                                           | $0$     |
 
 
 ### Blade Element Analysis in Forward Flight
@@ -123,11 +123,10 @@ neglected.
 Figure 2 shows a typical blade element for analysis. The $U_{R}$ is the
 radial component of velocity, which is neglected in this analysis.
 
-![](media/image2.png){width="3.838888888888889in"
-height="3.798611111111111in"}
+![BladeElement](Figures/BladeElement.png)
 
-Figure 2. Incident velocities and aerodynamic environment at a typical
-blade element.
+**Figure 2. Incident velocities and aerodynamic environment at a typical
+blade element.**
 
 $U_{T}$ is the in-plane component of the resultant local flow velocity:
 
@@ -221,48 +220,30 @@ The rotor and blade characteristics and performance parameters are taken
 from an experiment conducted by NASA in 1988, the experiment report was
 written by Elliott et al.
 
-Table 2. Rotor and blade characteristics
+**Table 2. Rotor and blade characteristics**
 
-  ---------------------------- ----------------- -----------------------------
-  Characteristics              Symbol            Value
+  | Characteristics     | Symbol        | Value                          |
+  | ------------------- | ------------- | ------------------------------ |
+  | Number of blades    | $N_{b}$       | 4                              |
+  | Airfoil             | \             | NACA0012, $C_{l\alpha} = 5.73$ |
+  | Hinge offset        | \             | 0.0508 m                       |
+  | Root cutout         | \             | 0.2096 m                       |
+  | Pitch-flap coupling | \             | 0                              |
+  | Linear twist        | $\theta_{tw}$ | -8 deg                         |
+  | Radius              | $R$           | 0.8606 m                       |
+  | Root chord          | $c$           | 0.0660 m                       |
 
-  Number of blades             $$N_{b}$$         4
 
-  Airfoil                                        NACA0012,
-                                                 $C_{l\alpha} = 5.73$
-
-  Hinge offset                                   0.0508 m
-
-  Root cutout                                    0.2096 m
-
-  Pitch-flap coupling                            0
-
-  Linear twist                 $$\theta_{tw}$$   -8 deg
-
-  Radius                       $$R$$             0.8606 m
-
-  Root chord                   $$c$$             0.0660 m
-  ---------------------------- ----------------- -----------------------------
-
-Table 3. Rotor performance parameters
-
-  ---------------------------- ---------------- -----------------------------
-  Parameters                   Symbol           Value
-
-  Drag coefficient             $$C_{D}$$        0.0002
-
-  Shaft tilt angle             $$\alpha_{s}$$   -3
-
-  Coning                       $$\beta_{0}$$    1.5
-
-  Infinite inflow ratio        $$\mu_{\inf}$$   0.149
-
-  Thrust coefficient           $$C_{T}$$        0.0063
-
-  Infinite inflow velocity     $$V_{\inf}$$     28.5002 m/s
-
-  Blade tip velocity           $$V_{tip}$$      190.2866 m/s
-  ---------------------------- ---------------- -----------------------------
+**Table 3. Rotor performance parameters**
+  | Parameters               | Symbol       | Value        |
+  | ------------------------ | ------------ | ------------ |
+  | Drag coefficient         | $C_{D}$      | 0.0002       |
+  | Shaft tilt angle         | $\alpha_{s}$ | -3           |
+  | Coning                   | $\beta_{0}$  | 1.5          |
+  | Infinite inflow ratio    | $\mu_{\inf}$ | 0.149        |
+  | Thrust coefficient       | $C_{T}$      | 0.0063       |
+  | Infinite inflow velocity | $V_{\inf}$   | 28.5002 m/s  |
+  | Blade tip velocity       | $V_{tip}$    | 190.2866 m/s |
 
 It's worth noticing that the NASA report nominated rotor control values:
 
